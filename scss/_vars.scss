@@ -1,0 +1,27 @@
+%defoult-font {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    color: rgba(33, 55, 81, 0.7);
+}
+
+%title-font {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 21px;
+    color: #213751;
+}
+
+%footer-font {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.6);
+}

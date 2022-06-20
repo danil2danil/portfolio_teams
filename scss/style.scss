@@ -1,0 +1,347 @@
+@import 'reset';
+@import 'vars';
+@import 'global';
+@import 'fonts';
+@import 'libs';
+@import 'blog';
+@import 'blog_one';
+
+
+
+.header {
+    padding: 33px 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav-item {
+        @extend %title-font;
+        margin-right: 32px;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+
+        &:link,
+        &:visited {
+            color: white;
+        }
+
+        &:hover {
+            color: wheat;
+        }
+    }
+
+    &__nav-item--pages{
+        color: #213751;
+
+        &:link,
+        &:visited {
+            color: #213751;
+        }
+
+        &:hover {
+            color: #698cb9;
+        }
+    }
+
+    & .btn--header {
+        color: #FFFFFF;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    &__close-ico {
+        display: none;
+        width: 32px;
+        height: 32px;
+    }
+
+    & .menu-btn {
+        display: none;
+        width: 34px;
+        height: 34px;
+        border: none;
+        background-image: url(./../images/burger-menu-ico.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+    }
+}
+
+
+
+.main {
+    .promo {
+        min-height: 800px;
+        background: url(./../images/promo-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &__inner {
+            padding-top: 209px;
+            max-width: 478px;
+        }
+
+        &__title {
+            @extend %title-font;
+            font-weight: 400;
+            font-size: 55px;
+            line-height: 67px;
+            color: #FFFFFF;
+            margin-bottom: 17px;
+        }
+
+        &__subtitle {
+            @extend %title-font;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 29px;
+            color: #FFFFFF;
+            margin-bottom: 67px;
+        }
+
+        &__input-email {
+            width: 298px;
+            height: 56px;
+            padding: 14px 16px;
+            border: none;
+            border-radius: 4px;
+            outline: none;
+            @extend %title-font;
+            font-size: 18px;
+            line-height: 22px;
+            color: rgba(33, 55, 81, 0.7);
+
+            &::placeholder {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 28px;
+                color: #6D7D8B;
+            }
+        }
+
+        &__input-btn {
+            width: 165px;
+            height: 56px;
+            vertical-align: top;
+            padding: 16px 26px;
+            @extend %title-font;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            background: #0BCBFF;
+            border: none;
+            border-radius: 4px;
+        }
+    }
+
+    .management {
+        &__content {
+            max-width: 467px;
+            text-align: left;
+        }
+
+        &__title {
+            @extend %title-font;
+        }
+
+        &__subtitle {
+            margin-bottom: 25px;
+        }
+    }
+
+    .works {
+        &__content {
+            max-width: 467px;
+            text-align: left;
+        }
+
+        &__title {
+            @extend %title-font;
+
+        }
+
+        &__subtitle {
+            margin-bottom: 40px;
+        }
+    }
+
+    .review {
+        margin: 75px 0px;
+        &__title {
+            @extend %title-font;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        &__slider{
+            position: relative;
+            .slick-arrow{
+                position: absolute;
+                bottom: -60px;
+                right: 0px;
+                font-size: 0px;
+                width: 42px;
+                height: 42px;
+            }
+
+            .slick-next{
+                background: url(./../images/arrow-next.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .slick-prev{
+                background: url(./../images/arrow_prev.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                margin-right: 40px;
+            }
+        }
+
+        &__slider__item{
+            margin: 30px;
+        }
+
+        &__slider__item-box{
+            width: 356px;
+            background: #FFFFFF;
+            padding: 40px 20px 40px 40px;
+            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+        }
+
+
+        &__stars {
+            max-width: 120px;
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            margin-bottom: 75px;
+        }
+
+        &__box {
+            display: flex;
+        }
+
+        &__avatar {
+            width: 56px;
+            height: 56px;
+            margin-right: 14px;
+        }
+
+        &__name {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 29px;
+            color: #25313C;
+        }
+
+        &__inf {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(33, 55, 81, 0.7);
+        }
+    }
+}
+
+.footer {
+    background: #314051;
+    @extend %footer-font;
+    padding: 50px 0px 28px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 156px;
+    }
+
+    &__main-inf {
+        margin: 15px;
+    }
+
+    &__list {
+        margin: 15px;
+    }
+
+
+    &__logo {
+        margin-bottom: 10px;
+    }
+
+    &__inf {
+        max-width: 142px;
+    }
+
+    &__list-title {
+        @extend %footer-font;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-bottom: 21px;
+    }
+
+    &__form-box {
+        position: relative;
+        width: 267px;
+        margin-top: 20px;
+    }
+
+    &__input-mail {
+        position: relative;
+        @extend %title-font;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        outline: 0;
+        border: 0;
+        border-radius: 4px;
+        width: 267px;
+        height: 48px;
+        padding: 6px 44px 6px 12px;
+        background: rgba(255, 255, 255, 0.1);
+
+        &::placeholder {
+            font-family: 'Cabin';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    &__input-btn {
+        width: 36px;
+        height: 36px;
+        background-color: transparent;
+        border: 0px;
+        background-image: url(./../images/arrow_forward.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 8px;
+        top: 5px;
+    }
+
+    &__copyright {
+        @extend %defoult-font;
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+
+@import '_media';
